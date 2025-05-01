@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Unsere Services - Friseursalon Baby Babbashop</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f0;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            color: #d18f77;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            justify-items: center;
+            align-items: center;
+            max-width: 600px;
+            margin: 140px auto 0; /* <<< Hier mehr Abstand nach oben! */
+        }
+        .button {
+            background-color: #ffcab1;
+            padding: 20px 40px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 200px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #ffd9c5;
+            transform: scale(1.05);
+        }
+        .child-button {
+            grid-column: span 2;
+            margin-top: 20px;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            background-color: #fdf6f0;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+        .back-button {
+            background-color: #e6a48d;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #f0b79d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Unsere Services</h1>
+
+        <div class="services-grid">
+            <a href="services_damen.html" class="button">Damen</a>
+            <a href="services_herren.html" class="button">Herren</a>
+            <a href="services_kinder.html" class="button child-button">Kinder</a>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="back-button">Zurück zur Startseite</a>
+    </footer>
+
+</body>
+</html>

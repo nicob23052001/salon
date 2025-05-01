@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Friseursalon Kiosk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f0; /* Hintergrundfarbe der Webseite */
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Stellt sicher, dass der Inhalt den ganzen Bildschirm füllt */
+            margin: 0; /* Verhindert zusätzliches Scrollen */
+            overflow: hidden; /* Verhindert Scrollen auf der Seite */
+        }
+        h1 {
+            color: #d18f77;
+            margin-bottom: 10px;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .button {
+            background-color: #ffcab1;
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #ffd9c5;
+            transform: scale(1.05);
+        }
+        .event-banner {
+            margin-top: 40px;
+            font-size: 20px;
+            color: #b45f4e;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            position: absolute; /* Fixiert das Bild am unteren Rand */
+            bottom: 0;
+            width: 100%;
+            background-color: transparent; /* Hintergrund transparent setzen */
+        }
+        footer img {
+            width: 23%; /* Bildgröße auf 60% der Breite setzen */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-left: 590px;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Bild von unten ausblenden */
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Für Webkit-basierte Browser */
+        }
+        /* Neues Bild links */
+        .left-img {
+            position: absolute;
+            top: 580px;
+            left: 0;
+            margin-left: 260px;
+            width: 25%; /* Gleiche Breite wie das rechte Bild */
+            height: auto;
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Bild von unten ausblenden */
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Für Webkit-basierte Browser */
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <h1>Herzlich Willkommen</h1>
+    <h1>bei</h1>
+    <h1>Susanne Berke</h1>
+
+    <div class="button-grid">
+        <!-- Verlinkung zu den verschiedenen Seiten -->
+        <a href="unsere_services.html" class="button">✨ Unsere Preisliste</a>
+        <a href="verwandlungen.html" class="button">💇‍♀️ Verwandlungen</a>
+        <a href="familienfreundlich.html" class="button">👨‍👩‍👧 Familienfreundlich</a>
+        <a href="ueber_uns.html" class="button">🧡 Über uns</a>
+    </div>
+
+    <!-- Neues Bild links -->
+    <img src="images/ape.png" alt="Ape Image" class="left-img">
+
+    <!-- Footer mit Bild, das am unteren Rand verschmilzt -->
+    <footer>
+        <img src="images/unten.png" alt="Salon Image">
+    </footer>
+
+</body>
+</html>
