@@ -7,14 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fdf6f0; /* Hintergrundfarbe der Webseite */
+            background-color: #fdf6f0;
             text-align: center;
             padding: 20px;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Stellt sicher, dass der Inhalt den ganzen Bildschirm füllt */
-            margin: 0; /* Verhindert zusätzliches Scrollen */
-            overflow: hidden; /* Verhindert Scrollen auf der Seite */
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
         }
         h1 {
             color: #d18f77;
@@ -47,32 +47,29 @@
             font-weight: bold;
         }
         footer {
-            text-align: center;
-            padding: 20px;
-            position: absolute; /* Fixiert das Bild am unteren Rand */
-            bottom: 0;
-            width: 100%;
-            background-color: transparent; /* Hintergrund transparent setzen */
+            position: absolute;
+            top: 430px; /* Gleiche Höhe wie .left-img */
+            right: 0;
+            width: auto;
+            background-color: transparent;
+            padding: 0;
         }
         footer img {
-            width: 23%; /* Bildgröße auf 60% der Breite setzen */
+            width: 23%; /* Gleiche Breite wie .left-img */
             height: auto;
-            display: block;
-            margin: 0 auto;
-            margin-left: 490px;
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Bild von unten ausblenden */
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Für Webkit-basierte Browser */
+            margin-left: 220px; /* Gleiche Seiten-Abstand wie links */
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         }
-        /* Neues Bild links */
         .left-img {
             position: absolute;
-            top: 580px;
+            top: 430px;
             left: 0;
-            margin-left: 260px;
-            width: 25%; /* Gleiche Breite wie das rechte Bild */
+            margin-left: 220px;
+            width: 25%;
             height: auto;
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Bild von unten ausblenden */
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* Für Webkit-basierte Browser */
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
         }
     </style>
 </head>
@@ -83,7 +80,6 @@
     <h1>Susanne Berke</h1>
 
     <div class="button-grid">
-        <!-- Verlinkung zu den verschiedenen Seiten -->
         <a href="unsere_services.html" class="button">✨ Unsere Preisliste csacascas</a>
         <a href="verwandlungen.html" class="button">💇‍♀️ Galerie</a>
         <a href="familienfreundlich.html" class="button">👨‍👩‍👧 Familienfreundlich</a>
@@ -93,10 +89,9 @@
     <!-- Neues Bild links -->
     <img src="images/ape.png" alt="Ape Image" class="left-img">
 
-    <!-- Footer mit Bild, das am unteren Rand verschmilzt -->
+    <!-- Rechtes Bild (ehemals im Footer, jetzt angepasst) -->
     <footer>
         <img src="images/unten.png" alt="Salon Image">
     </footer>
-
 </body>
 </html>
